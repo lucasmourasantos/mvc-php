@@ -16,8 +16,9 @@ $app = new \Slim\Slim();
 // listagem de usuários
 $app->get('/', function ()
 {
-    $UsersController = new \App\Controllers\UsersController;
-    $UsersController->index();
+  $UsersController = new \App\Controllers\UsersController;
+  $UsersController->create();
+    
 });
 
 
